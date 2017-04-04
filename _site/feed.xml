@@ -5,9 +5,578 @@
     <description>Imagination is more important than knowledge. -Albert Einstein</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 04 Apr 2017 15:53:15 +0800</pubDate>
-    <lastBuildDate>Tue, 04 Apr 2017 15:53:15 +0800</lastBuildDate>
+    <pubDate>Tue, 04 Apr 2017 21:00:56 +0800</pubDate>
+    <lastBuildDate>Tue, 04 Apr 2017 21:00:56 +0800</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>Markdown简介BY马克飞象</title>
+        <description>&lt;h1 id=&quot;欢迎使用马克飞象&quot;&gt;欢迎使用马克飞象&lt;/h1&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;@(示例笔记本)[马克飞象&lt;/td&gt;
+      &lt;td&gt;帮助&lt;/td&gt;
+      &lt;td&gt;Markdown]&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;strong&gt;马克飞象&lt;/strong&gt;是一款专为印象笔记（Evernote）打造的Markdown编辑器，通过精心的设计与技术实现，配合印象笔记强大的存储和同步功能，带来前所未有的书写体验。特点概述：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;功能丰富&lt;/strong&gt; ：支持高亮代码块、&lt;em&gt;LaTeX&lt;/em&gt; 公式、流程图，本地图片以及附件上传，甚至截图粘贴，工作学习好帮手；&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;得心应手&lt;/strong&gt; ：简洁高效的编辑器，提供&lt;a href=&quot;http://maxiang.info/client_zh&quot;&gt;桌面客户端&lt;/a&gt;以及&lt;a href=&quot;https://chrome.google.com/webstore/detail/kidnkfckhbdkfgbicccmdggmpgogehop&quot;&gt;离线Chrome App&lt;/a&gt;，支持移动端 Web；&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;深度整合&lt;/strong&gt; ：支持选择笔记本和添加标签，支持从印象笔记跳转编辑，轻松管理。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#欢迎使用马克飞象&quot; id=&quot;markdown-toc-欢迎使用马克飞象&quot;&gt;欢迎使用马克飞象&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#markdown简介&quot; id=&quot;markdown-toc-markdown简介&quot;&gt;Markdown简介&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#代码块&quot; id=&quot;markdown-toc-代码块&quot;&gt;代码块&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#latex-公式&quot; id=&quot;markdown-toc-latex-公式&quot;&gt;LaTeX 公式&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#表格&quot; id=&quot;markdown-toc-表格&quot;&gt;表格&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#流程图&quot; id=&quot;markdown-toc-流程图&quot;&gt;流程图&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#复选框&quot; id=&quot;markdown-toc-复选框&quot;&gt;复选框&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#印象笔记相关&quot; id=&quot;markdown-toc-印象笔记相关&quot;&gt;印象笔记相关&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#笔记本和标签&quot; id=&quot;markdown-toc-笔记本和标签&quot;&gt;笔记本和标签&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#笔记标题&quot; id=&quot;markdown-toc-笔记标题&quot;&gt;笔记标题&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#快捷编辑&quot; id=&quot;markdown-toc-快捷编辑&quot;&gt;快捷编辑&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#数据同步&quot; id=&quot;markdown-toc-数据同步&quot;&gt;数据同步&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#离线存储&quot; id=&quot;markdown-toc-离线存储&quot;&gt;离线存储&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#编辑器相关&quot; id=&quot;markdown-toc-编辑器相关&quot;&gt;编辑器相关&lt;/a&gt;        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#设置&quot; id=&quot;markdown-toc-设置&quot;&gt;设置&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#快捷键&quot; id=&quot;markdown-toc-快捷键&quot;&gt;快捷键&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#关于收费&quot; id=&quot;markdown-toc-关于收费&quot;&gt;关于收费&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#反馈与建议&quot; id=&quot;markdown-toc-反馈与建议&quot;&gt;反馈与建议&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;markdown简介&quot;&gt;Markdown简介&lt;/h2&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Markdown 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档，然后转换成格式丰富的HTML页面。    —— &lt;a href=&quot;https://zh.wikipedia.org/wiki/Markdown&quot;&gt;维基百科&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;正如您在阅读的这份文档，它使用简单的符号标识不同的标题，将某些文字标记为&lt;strong&gt;粗体&lt;/strong&gt;或者&lt;em&gt;斜体&lt;/em&gt;，创建一个&lt;a href=&quot;http://www.example.com&quot;&gt;链接&lt;/a&gt;或一个脚注&lt;sup id=&quot;fnref:demo&quot;&gt;&lt;a href=&quot;#fn:demo&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;。下面列举了几个高级功能，更多语法请按&lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl + /&lt;/code&gt;查看帮助。&lt;/p&gt;
+
+&lt;h3 id=&quot;代码块&quot;&gt;代码块&lt;/h3&gt;
+
+&lt;p&gt;using &lt;code class=&quot;highlighter-rouge&quot;&gt;molokai.css&lt;/code&gt;  by 
+&lt;code class=&quot;highlighter-rouge&quot;&gt;rougify style molokai &amp;gt; css/syntax.css&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Add the code in &lt;code class=&quot;highlighter-rouge&quot;&gt;syntax.css&lt;/code&gt; to change the font and font-size&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.highlight&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#F5F5F5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#272822&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;/*#1b1d1e  f8f8f2  272822*/&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;'Consolas'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;serif&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;15px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;  
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nd&quot;&gt;@requires_authorization&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;somefunc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;param1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;param2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;s&quot;&gt;'''A docstring'''&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;param1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;param2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# interesting&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Greater'&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;param2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;param1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;SomeClass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;message&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'''interpreter
+... prompt'''&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ruby&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;show&lt;/span&gt;
+  &lt;span class=&quot;vi&quot;&gt;@widget&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Widget&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;respond_to&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# show.html.erb&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;json&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;render&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;json: &lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@widget&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;matlab&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-matlab highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;...&lt;/span&gt;
+                 &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;% The EIG function is applied to each of the horizontal 'slices' of A.&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;eig&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;squeeze&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,:,:)))&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;python&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ReqStrSugRepr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cls&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bases&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;attrd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;nb&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ReqStrSugRepr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cls&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bases&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;attrd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'__str__'&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;attrd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;raise&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;TypeError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Class requires overriding of __str__()&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'__repr__'&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;attrd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;warn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+                &lt;span class=&quot;s&quot;&gt;'Class suggets overrding of __repr__()&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;stacklevel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;c/c++&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;int a = %d&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;java&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;JavaBeans.People.Administor&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;AcceptMember&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;HttpServlet&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;cm&quot;&gt;/**
+     * 
+     * @throws ServletException if an error occurred
+     * @throws IOException if an error occurred
+     */&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;doGet&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HttpServletRequest&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;HttpServletResponse&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;kd&quot;&gt;throws&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ServletException&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IOException&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+
+        &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setContentType&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text/html&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;doPost&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;latex-公式&quot;&gt;LaTeX 公式&lt;/h3&gt;
+
+&lt;p&gt;可以创建行内公式，例如 &lt;script type=&quot;math/tex&quot;&gt;\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N&lt;/script&gt;。或者块级公式：&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a}&lt;/script&gt;
+
+&lt;h3 id=&quot;表格&quot;&gt;表格&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;First cell&lt;/td&gt;
+      &lt;td&gt;Second cell&lt;/td&gt;
+      &lt;td&gt;Third cell&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;First&lt;/td&gt;
+      &lt;td&gt;Second&lt;/td&gt;
+      &lt;td&gt;Third&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;First&lt;/td&gt;
+      &lt;td&gt;Second&lt;/td&gt;
+      &lt;td&gt; &lt;/td&gt;
+      &lt;td&gt;Fourth&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Item&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Value&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Qty&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Computer&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1600 USD&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;5&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Phone&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;12 USD&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;12&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Pipe&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;1 USD&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;234&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;流程图&quot;&gt;流程图&lt;/h3&gt;
+&lt;pre&gt;&lt;code class=&quot;language-flow&quot;&gt;st=&amp;gt;start: Start
+e=&amp;gt;end
+op=&amp;gt;operation: My Operation
+cond=&amp;gt;condition: Yes or No?
+
+st-&amp;gt;op-&amp;gt;cond
+cond(yes)-&amp;gt;e
+cond(no)-&amp;gt;op
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;以及时序图:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-sequence&quot;&gt;Alice-&amp;gt;Bob: Hello Bob, how are you?
+Note right of Bob: Bob thinks
+Bob--&amp;gt;Alice: I am good thanks!
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;提示：&lt;/strong&gt;想了解更多，请查看&lt;strong&gt;流程图&lt;/strong&gt;&lt;a href=&quot;http://adrai.github.io/flowchart.js/&quot;&gt;语法&lt;/a&gt;以及&lt;strong&gt;时序图&lt;/strong&gt;&lt;a href=&quot;http://bramp.github.io/js-sequence-diagrams/&quot;&gt;语法&lt;/a&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;复选框&quot;&gt;复选框&lt;/h3&gt;
+
+&lt;p&gt;使用 &lt;code class=&quot;highlighter-rouge&quot;&gt;- [ ]&lt;/code&gt; 和 &lt;code class=&quot;highlighter-rouge&quot;&gt;- [x]&lt;/code&gt; 语法可以创建复选框，实现 todo-list 等功能。例如：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[x] 已完成事项&lt;/li&gt;
+  &lt;li&gt;[ ] 待办事项1&lt;/li&gt;
+  &lt;li&gt;[ ] 待办事项2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;注意：&lt;/strong&gt;目前支持尚不完全，在印象笔记中勾选复选框是无效、不能同步的，所以必须在&lt;strong&gt;马克飞象&lt;/strong&gt;中修改 Markdown 原文才可生效。下个版本将会全面支持。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;印象笔记相关&quot;&gt;印象笔记相关&lt;/h2&gt;
+
+&lt;h3 id=&quot;笔记本和标签&quot;&gt;笔记本和标签&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;马克飞象&lt;/strong&gt;增加了&lt;code class=&quot;highlighter-rouge&quot;&gt;@(笔记本)[标签A|标签B]&lt;/code&gt;语法, 以选择笔记本和添加标签。 &lt;strong&gt;绑定账号后&lt;/strong&gt;， 输入&lt;code class=&quot;highlighter-rouge&quot;&gt;(&lt;/code&gt;自动会出现笔记本列表，请从中选择。&lt;/p&gt;
+
+&lt;h3 id=&quot;笔记标题&quot;&gt;笔记标题&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;马克飞象&lt;/strong&gt;会自动使用文档内出现的第一个标题作为笔记标题。例如本文，就是第一行的 &lt;code class=&quot;highlighter-rouge&quot;&gt;欢迎使用马克飞象&lt;/code&gt;。&lt;/p&gt;
+
+&lt;h3 id=&quot;快捷编辑&quot;&gt;快捷编辑&lt;/h3&gt;
+&lt;p&gt;保存在印象笔记中的笔记，右上角会有一个红色的编辑按钮，点击后会回到&lt;strong&gt;马克飞象&lt;/strong&gt;中打开并编辑该笔记。&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;注意：&lt;/strong&gt;目前用户在印象笔记中单方面做的任何修改，马克飞象是无法自动感知和更新的。所以请务必回到马克飞象编辑。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;数据同步&quot;&gt;数据同步&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;马克飞象&lt;/strong&gt;通过&lt;strong&gt;将Markdown原文以隐藏内容保存在笔记中&lt;/strong&gt;的精妙设计，实现了对Markdown的存储和再次编辑。既解决了其他产品只是单向导出HTML的单薄，又规避了服务端存储Markdown带来的隐私安全问题。这样，服务端仅作为对印象笔记 API调用和数据转换之用。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;隐私声明：用户所有的笔记数据，均保存在印象笔记中。马克飞象不存储用户的任何笔记数据。&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;离线存储&quot;&gt;离线存储&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;马克飞象&lt;/strong&gt;使用浏览器离线存储将内容实时保存在本地，不必担心网络断掉或浏览器崩溃。为了节省空间和避免冲突，已同步至印象笔记并且不再修改的笔记将删除部分本地缓存，不过依然可以随时通过&lt;code class=&quot;highlighter-rouge&quot;&gt;文档管理&lt;/code&gt;打开。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;注意：&lt;/strong&gt;虽然浏览器存储大部分时候都比较可靠，但印象笔记作为专业云存储，更值得信赖。以防万一，&lt;strong&gt;请务必经常及时同步到印象笔记&lt;/strong&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;编辑器相关&quot;&gt;编辑器相关&lt;/h2&gt;
+&lt;h3 id=&quot;设置&quot;&gt;设置&lt;/h3&gt;
+&lt;p&gt;右侧系统菜单（快捷键&lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl + M&lt;/code&gt;）的&lt;code class=&quot;highlighter-rouge&quot;&gt;设置&lt;/code&gt;中，提供了界面字体、字号、自定义CSS、vim/emacs 键盘模式等高级选项。&lt;/p&gt;
+
+&lt;h3 id=&quot;快捷键&quot;&gt;快捷键&lt;/h3&gt;
+
+&lt;p&gt;帮助    &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl + /&lt;/code&gt;
+同步文档    &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl + S&lt;/code&gt;
+创建文档    &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl + Alt + N&lt;/code&gt;
+最大化编辑器    &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl + Enter&lt;/code&gt;
+预览文档 &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl + Alt + Enter&lt;/code&gt;
+文档管理    &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl + O&lt;/code&gt;
+系统菜单    &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl + M&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;加粗    &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl + B&lt;/code&gt;
+插入图片    &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl + G&lt;/code&gt;
+插入链接    &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl + L&lt;/code&gt;
+提升标题    &lt;code class=&quot;highlighter-rouge&quot;&gt;Ctrl + H&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;关于收费&quot;&gt;关于收费&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;马克飞象&lt;/strong&gt;为新用户提供 10 天的试用期，试用期过后需要&lt;a href=&quot;maxiang.info/vip.html&quot;&gt;续费&lt;/a&gt;才能继续使用。未购买或者未及时续费，将不能同步新的笔记。之前保存过的笔记依然可以编辑。&lt;/p&gt;
+
+&lt;h2 id=&quot;反馈与建议&quot;&gt;反馈与建议&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;微博：&lt;a href=&quot;http://weibo.com/u/2788354117&quot;&gt;@马克飞象&lt;/a&gt;，&lt;a href=&quot;http://weibo.com/ggock&quot; title=&quot;开发者个人账号&quot;&gt;@GGock&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;邮箱：&lt;a href=&quot;mailto:hustgock@gmail.com&quot;&gt;hustgock@gmail.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;感谢阅读这份帮助文档。请点击右上角，绑定印象笔记账号，开启全新的记录与分享体验吧。&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:demo&quot;&gt;
+      &lt;p&gt;这是一个示例脚注。请查阅 &lt;a href=&quot;https://github.com/fletcher/MultiMarkdown/wiki/MultiMarkdown-Syntax-Guide#footnotes&quot;&gt;MultiMarkdown 文档&lt;/a&gt; 关于脚注的说明。 &lt;strong&gt;限制：&lt;/strong&gt; 印象笔记的笔记内容使用 &lt;a href=&quot;https://dev.yinxiang.com/doc/articles/enml.php&quot;&gt;ENML&lt;/a&gt; 格式，基于 HTML，但是不支持某些标签和属性，例如id，这就导致&lt;code class=&quot;highlighter-rouge&quot;&gt;脚注&lt;/code&gt;和&lt;code class=&quot;highlighter-rouge&quot;&gt;TOC&lt;/code&gt;无法正常点击。&amp;nbsp;&lt;a href=&quot;#fnref:demo&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Tue, 04 Apr 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2017/04/04/markdown_maxiang/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/04/04/markdown_maxiang/</guid>
+        
+        <category>markdown</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>markdown test</title>
+        <description>&lt;h2 id=&quot;example-of-markdown&quot;&gt;example of markdown&lt;/h2&gt;
+
+&lt;h3 id=&quot;homepage&quot;&gt;homepage&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;http://huajh7.com&quot;&gt;huajh7.com&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;quotes&quot;&gt;quotes&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.&lt;/p&gt;
+
+  &lt;p&gt;Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+id sem consectetuer libero luctus adipiscing.&lt;/p&gt;
+
+  &lt;p&gt;machine&lt;/p&gt;
+  &lt;blockquote&gt;
+    &lt;p&gt;This is nested blockquote.&lt;/p&gt;
+  &lt;/blockquote&gt;
+
+  &lt;p&gt;Back to the first level.
+return shell_exec(“echo $input | $markdown_script”);&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;pargraphs&quot;&gt;pargraphs&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Red&lt;/li&gt;
+  &lt;li&gt;Bule
+    &lt;ul&gt;
+      &lt;li&gt;machine&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;good
+    &lt;ol&gt;
+      &lt;li&gt;Bird&lt;/li&gt;
+      &lt;li&gt;parish&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;del&gt;strik through&lt;/del&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;import tempfile; print(tempfile.gettempdir())&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;==hightlight==&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;代码段和代码高亮&quot;&gt;代码段和代码高亮&lt;/h3&gt;
+
+&lt;p&gt;using &lt;code class=&quot;highlighter-rouge&quot;&gt;molokai.css&lt;/code&gt;  by 
+&lt;code class=&quot;highlighter-rouge&quot;&gt;rougify style molokai &amp;gt; css/syntax.css&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Add the code in &lt;code class=&quot;highlighter-rouge&quot;&gt;syntax.css&lt;/code&gt; to change the font and font-size&lt;/p&gt;
+
+&lt;div class=&quot;language-css highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;.highlight&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#F5F5F5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;background-color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#272822&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;/*#1b1d1e  f8f8f2  272822*/&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;'Consolas'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;serif&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;font-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;15px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;  
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ruby&lt;/code&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;show&lt;/span&gt;
+  &lt;span class=&quot;vi&quot;&gt;@widget&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Widget&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;respond_to&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# show.html.erb&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;json&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;render&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;json: &lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@widget&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;code class=&quot;hljs livecodeserver&quot;&gt;&lt;/code&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;show&lt;/span&gt;
+  &lt;span class=&quot;vi&quot;&gt;@widget&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Widget&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;respond_to&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# show.html.erb&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;json&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;render&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;json: &lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@widget&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+&lt;p&gt;&amp;lt;/code&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ruby&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;show&lt;/span&gt;
+  &lt;span class=&quot;vi&quot;&gt;@widget&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Widget&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;respond_to&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# show.html.erb&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;json&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;render&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;json: &lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@widget&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;matlab&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-matlab highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;cat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;...&lt;/span&gt;
+                 &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;% The EIG function is applied to each of the horizontal 'slices' of A.&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;eig&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;squeeze&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,:,:)))&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;python&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ReqStrSugRepr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cls&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bases&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;attrd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;nb&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ReqStrSugRepr&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cls&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bases&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;attrd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'__str__'&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;attrd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;raise&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;TypeError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Class requires overriding of __str__()&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'__repr__'&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;attrd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;warn&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+                &lt;span class=&quot;s&quot;&gt;'Class suggets overrding of __repr__()&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;stacklevel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;c/c++&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-c highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;int a = %d&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;JavaBeans.People.Administor&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;AcceptMember&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;HttpServlet&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+
+    &lt;span class=&quot;cm&quot;&gt;/**
+     * Constructor of the object.
+     */&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;AcceptMember&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+    &lt;span class=&quot;cm&quot;&gt;/**
+     * 
+     * @throws ServletException if an error occurred
+     * @throws IOException if an error occurred
+     */&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;doGet&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HttpServletRequest&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;HttpServletResponse&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;kd&quot;&gt;throws&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ServletException&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;IOException&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+
+        &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setContentType&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;text/html&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;doPost&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;response&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;质能方程公式：&lt;script type=&quot;math/tex&quot;&gt;E=mc^2&lt;/script&gt;&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\min_{x,y} \sum_{i=1}^{N} (x_i+ 10 + y_i)^2&lt;/script&gt;
+
+&lt;h3 id=&quot;脚注footnote&quot;&gt;脚注（footnote）&lt;/h3&gt;
+
+&lt;p&gt;实现方式如下:&lt;/p&gt;
+
+&lt;p&gt;比如PHP&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; Markdown Extra &lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; 是这样的。&lt;/p&gt;
+
+&lt;h3 id=&quot;引用方式&quot;&gt;引用方式：&lt;/h3&gt;
+&lt;p&gt;I get 10 times more traffic from &lt;a href=&quot;http://google.com/&quot; title=&quot;Google&quot;&gt;Google&lt;/a&gt; than from &lt;a href=&quot;http://search.yahoo.com/&quot; title=&quot;Yahoo Search&quot;&gt;Yahoo&lt;/a&gt; or &lt;a href=&quot;http://search.msn.com/&quot; title=&quot;MSN Search&quot;&gt;MSN&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;下划线&quot;&gt;下划线&lt;/h3&gt;
+
+&lt;p&gt;—下划线—&lt;/p&gt;
+
+&lt;h3 id=&quot;images&quot;&gt;Images&lt;/h3&gt;
+
+&lt;h4 id=&quot;内联方式&quot;&gt;内联方式：&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/lenanoise.jpg&quot; alt=&quot;lenaNoise&quot; title=&quot;lenaNoise&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;引用方式-1&quot;&gt;引用方式：&lt;/h4&gt;
+&lt;p&gt;&lt;img src=&quot;/img/mona-leber-final.jpg&quot; alt=&quot;alt text&quot; title=&quot;mona-leber&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;Markdown是一种纯文本标记语言&amp;nbsp;&lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;开源笔记平台，支持Markdown和笔记直接发为博文&amp;nbsp;&lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Tue, 04 Apr 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2017/04/04/markdown_first/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/04/04/markdown_first/</guid>
+        
+        <category>markdown</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Kramdown Syntax</title>
+        <description>&lt;h1 id=&quot;kramdown-syntax&quot;&gt;Kramdown Syntax&lt;/h1&gt;
+
+&lt;h2 id=&quot;headers&quot;&gt;HEADERS&lt;/h2&gt;
+
+&lt;h3 id=&quot;setext-style&quot;&gt;Setext Style&lt;/h3&gt;
+
+&lt;h1 id=&quot;first-level-header&quot;&gt;First level header&lt;/h1&gt;
+
+&lt;h2 id=&quot;second-level-header&quot;&gt;Second level header&lt;/h2&gt;
+
+&lt;h1 id=&quot;other-first-level-header&quot;&gt;Other first level header&lt;/h1&gt;
+
+</description>
+        <pubDate>Tue, 04 Apr 2017 00:00:00 +0800</pubDate>
+        <link>http://localhost:4000/2017/04/04/kramdown-syntax/</link>
+        <guid isPermaLink="true">http://localhost:4000/2017/04/04/kramdown-syntax/</guid>
+        
+        <category>markdown</category>
+        
+        
+      </item>
     
       <item>
         <title>下一代 Web 应用模型 —— Progressive Web App</title>
@@ -1190,105 +1759,6 @@ Android’s source code is released by Google under open source licenses, althou
         <guid isPermaLink="true">http://localhost:4000/2014/04/15/action-recognition/</guid>
         
         <category>action recognition</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>精神痞子</title>
-        <description>&lt;p&gt;我不清楚是否已经后悔说更愿意直博，不知道当初怎么脑抽，觉得自己应当走理论研究这条路。但这的确是我深思熟虑很久的结果。然而，现实告诉我这是过于理想化的想法。每个人心中多多少少都会有一个Role model（我指的是Albert Einstein, Michelangelo），他在某些方面给人以动力，目标，准则。你所渴望的，你所追求的，多多少少决定了你想成为什么样的人。当我们幻想理想中的生活，给出的描述多多少少会由具体的物质组成，然后才是你心灵上、精神上的东西。若干年后，假想我们真正走到那一步（我指的是基本满足你在物质上的需求，包括你整个家庭），却发现依然填充不了你那颗跌跌撞撞的心。你不清楚这样的生活是否有意义，你怀疑当初的判断，怀疑社会的判断，你那颗欲燃欲灭的心在拷问自己：你究竟是谁。另一方面，你一味追求所谓精神上的体验，却发现随时可能被现实打败。一个人如果连生存都存在问题，又谈何生活质量。&lt;/p&gt;
-
-&lt;p&gt;对于未来，你是理想化的，永远满含着信心与信念，并憎恶低俗与糜烂。而对于现实，你是客观的，或者说你并没有足够的胆量去挑战那些制约你的体制。你小心翼翼地爬着，偶尔望下天空。你像蜗牛一样背着不知道是什么的负担，却依然坚信总有一天会轻装上阵，证明活着的意义。你会突然之间忘记存在的意义，你害怕自己变成一台机器，又害怕变成一个胆怯的懦弱的精神痞子。&lt;/p&gt;
-
-&lt;p&gt;   这段时间的确有些萎靡，有些迷乱，我的意思是精神上失去了支柱，在某些方面失去了平衡。按照往常，你会制定一个非常详细的日程安排表，写清楚今天上午下午晚上几点要做什么，明天要做什么，本周有哪些任务，本月本学期有哪些事情。如今，没有课程压力，没有升学压力，没有一堆被你说成“毫无价值”却又忍不住去做的事情阻扰，应该说自由度更大了。然而，充满欲望 与“信念”的你，肯定不会停止脚步，肯定不会让自己大脑停留下空白的虚无之中。你囤积了一堆东西准备填补你空白的大脑；你发疯似地渴望自己能迅速变成你所期待的样子；你已经赶不上你所想象的自己。你不明生态圈学术圈，甚至不明如何在这个圈子里活下去，你仅凭着微薄的信念支持着你的所有，渴望迅速成长。你厌恶唯paper论，讨厌为一点点所谓的“Paper创新 而东拼西凑的知识零件，这并不是对交叉学科的偏见，而是对因为paper 所以paper”的憎恨。我说深思熟虑后决定做理论，这是一个人非常纯净的想法或冲动，没有任何外界事物的干扰。&lt;/p&gt;
-
-&lt;p&gt;   当你没有任何束缚，你会做什么呢？出于本能地好奇心，你愿意在你所想象的世界中翱翔，你忘却一切，没有金钱，社交，性交，声望，偏见，傲慢，权利与政治。我承认这是一种极度的自我主义。面对现实，你轻视岁月的痕迹，无法让时光再来一遍。你有让你的家人活的更有尊严，活得更有价值的义务；你有让你的家族变得更好的义务；你无法抗拒来自社会的偏见与傲慢；无论采取何种可被接受的方式，你都得征服它。你必须证明你存在的价值，你必须为建设你更美好的家庭，社会，祖国乃至世界而奋斗。诚然,“美好的含义是你所定义的，千万不能落入庸俗，被社会所谓的价值观所淹没。我知道你是非常独立 的一个人，我的意思是你不会陷入到某个圈子，立马接受其观点，被其耳濡目染；相反，你能够在合适的时候跳出来，反复和自己澄清自己的观点，保持这种独立性。这是可怕的，同时也是你之所以称之为你的原因。一些你所持有的观点不会轻易打破，你不会在意他人的反驳且并不试图说服，这种中立于己于人都是可怕的。&lt;/p&gt;
-
-&lt;p&gt;  思维上的空白总是让人窒息，撰文舒缓下情绪。&lt;/p&gt;
-</description>
-        <pubDate>Tue, 02 Apr 2013 01:01:41 +0800</pubDate>
-        <link>http://localhost:4000/2013/04/02/phd-reflection/</link>
-        <guid isPermaLink="true">http://localhost:4000/2013/04/02/phd-reflection/</guid>
-        
-        <category>生活</category>
-        
-        <category>PHD</category>
-        
-        <category>reflection</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Variational Bayes</title>
-        <description>&lt;p&gt;&lt;strong&gt;&lt;em&gt;关键词&lt;/em&gt;&lt;/strong&gt;
- **贝叶斯推断，平均场理论，变分估计，贝叶斯推断，KL散度，确定性估计&lt;/p&gt;
-
-&lt;p&gt;一、前言&lt;/p&gt;
-
-&lt;p&gt;上世纪90年代，变分推断在概率模型上得到迅速发展，在贝叶斯框架下一般的变分法由Attias的两篇文章给出。Matthew J.Beal的博士论文《Variational Algorithms for Approximate Bayesian Inference》中有比较充分地论述，作者将其应用于隐马尔科夫模型，混合因子分析，线性动力学，图模型等。变分贝叶斯是一类用于贝叶斯估计和机器学习领域中近似计算复杂（intractable）积分的技术。它主要应用于复杂的统计模型中，这种模型一般包括三类变量：观测变量(observed variables, data)，未知参数（parameters）和潜变量（latent variables）。在贝叶斯推断中，参数和潜变量统称为不可观测变量(unobserved variables)。变分贝叶斯方法主要是两个目的:&lt;/p&gt;
-
-&lt;p&gt;(1)   近似不可观测变量的后验概率，以便通过这些变量作出统计推断。&lt;/p&gt;
-
-&lt;p&gt;(2)   对一个特定的模型，给出观测变量的边缘似然函数（或称为证据，evidence）的下界。主要用于模型的选择，认为模型的边缘似然值越高，则模型对数据拟合程度越好，该模型产生Data的概率也越高。&lt;/p&gt;
-
-&lt;p&gt;对于第一个目的，蒙特卡洛模拟，特别是用Gibbs取样的MCMC方法，可以近似计算复杂的后验分布，能很好地应用到贝叶斯统计推断。此方法通过大量的样本估计真实的后验，因而近似结果带有一定的随机性。与此不同的是，变分贝叶斯方法提供一种局部最优，但具有确定解的近似后验方法。&lt;/p&gt;
-
-&lt;p&gt;从某种角度看，变分贝叶斯可以看做是EM算法的扩展，因为它也是采用极大后验估计(MAP)，即用单个最有可能的参数值来代替完全贝叶斯估计。另外，变分贝叶斯也通过一组相互依然（mutually dependent）的等式进行不断的迭代来获得最优解。&lt;/p&gt;
-
-&lt;p&gt;二、问题描述&lt;/p&gt;
-
-&lt;p&gt;重新考虑一个问题：1）有一组观测数据$D$，
-并且已知模型的形式，求参数与潜变量（或不可观测变量）&lt;script type=&quot;math/tex&quot;&gt;Z = \{ {Z_1},...,{Z_n}\}&lt;/script&gt; 的后验分布:&lt;script type=&quot;math/tex&quot;&gt;P(Z|D)&lt;/script&gt;。&lt;/p&gt;
-
-&lt;p&gt;\begin{equation} \label{beta_Gamma}
-P(\beta_k) = \mathcal{G}(c_0,d_0), \forall k.
-\end{equation}&lt;/p&gt;
-
-&lt;p&gt;对于问题一，幸运的是，我们不需要重新定义一个度量指标。在信息论中，已经存在描述两个随机分布之间距离的度量，即相对熵，或者称为Kullback-Leibler散度。&lt;/p&gt;
-
-&lt;p&gt;三、Kullback-Leibler散度&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://blog.huajh7.com/2013/03/06/variational-bayes/vb-1/&quot;&gt;&lt;img src=&quot;http://blog.huajh7.com/wp-content/uploads/2013/03/vb-1-300x235.png&quot; alt=&quot;vb-1&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;四、平均场理论（Mean Field Method）&lt;/p&gt;
-
-&lt;p&gt;数学上说，平均场的适用范围只能是完全图，或者说系统结构是well-mixed，在这种情况下，系统中的任何一个个体以等可能接触其他个体。反观物理，平均场与其说是一种方法，不如说是一种思想。其实统计物理的研究目的就是期望对宏观的热力学现象给予合理的微观理论。物理学家坚信，即便不满足完全图的假设，但既然这种“局部”到“整体”的作用得以实现，那么个体之间的局部作用相较于“全局”的作用是可以忽略不计的。&lt;/p&gt;
-
-&lt;p&gt;注意这里并非一个不可观测变量一个划分，而应该根据实际情况做决定。当然你也可以这么做，但是有时候，将几个潜变量放在一起会更容易处理。&lt;/p&gt;
-
-&lt;p&gt;参考文献&lt;/p&gt;
-
-&lt;p&gt;[1] Smídl, Václav, and Anthony Quinn. &lt;em&gt;The variational Bayes method in signal processing&lt;/em&gt;. Springer, 2006.&lt;/p&gt;
-
-&lt;p&gt;[2] Beal, Matthew James. &lt;em&gt;Variational algorithms for approximate Bayesian inference&lt;/em&gt;. Diss. University of London, 2003.&lt;/p&gt;
-
-&lt;p&gt;[3] Fox, Charles W., and Stephen J. Roberts. “A tutorial on variational Bayesian inference.” &lt;em&gt;Artificial Intelligence Review&lt;/em&gt; 38.2 (2012): 85-95.&lt;/p&gt;
-
-&lt;p&gt;[4] Attias, Hagai. “Inferring parameters and structure of latent variable models by variational Bayes.” &lt;em&gt;Proceedings of the Fifteenth conference on Uncertainty in artificial intelligence&lt;/em&gt;. Morgan Kaufmann Publishers Inc., 1999.&lt;/p&gt;
-
-&lt;p&gt;[5] Attias, Hagai. “A variational Bayesian framework for graphical models.”&lt;em&gt;Advances in neural information processing systems&lt;/em&gt; 12.1-2 (2000): 209-215.&lt;/p&gt;
-
-&lt;p&gt;全文下载：&lt;a href=&quot;http://blog.huajh7.com/wp-content/uploads/2013/03/Variational-Inference-full.pdf&quot;&gt;&lt;strong&gt;Variational Inference -full.pdf&lt;/strong&gt;&lt;/a&gt;&lt;a href=&quot;http://blog.huajh7.com/wp-content/uploads/2013/03/Variational-Inference1.pdf&quot;&gt;
-&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt; &lt;/p&gt;
-</description>
-        <pubDate>Thu, 07 Mar 2013 01:34:54 +0800</pubDate>
-        <link>http://localhost:4000/2013/03/07/variational-bayes/</link>
-        <guid isPermaLink="true">http://localhost:4000/2013/03/07/variational-bayes/</guid>
-        
-        <category>Approximation</category>
-        
-        <category>Determine methods</category>
-        
-        <category>KL Divergence</category>
-        
-        <category>Machine Learning</category>
-        
-        <category>Mean field Method</category>
-        
-        <category>Variational Inference</category>
         
         
       </item>

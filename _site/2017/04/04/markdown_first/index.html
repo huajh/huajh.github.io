@@ -10,7 +10,7 @@
     <meta name="keywords"  content="华俊豪, huajh, huajh7, Junhao Hua, @huajh, 华俊豪的博客, huajh7's Blog, 博客, 机器学习, 贝叶斯">
     <meta name="theme-color" content="#000000">
     
-    <title>Variational Bayes - Junhao Hua 博客 | huajh7's Blog</title>
+    <title>markdown test - Junhao Hua 博客 | huajh7's Blog</title>
 
     <!-- Web App Manifest -->
     <link rel="manifest" href="/pwa/manifest.json">
@@ -19,7 +19,7 @@
     <link rel="shortcut icon" href="/img/favicon.ico">
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="http://localhost:4000/2013/03/07/variational-bayes/">
+    <link rel="canonical" href="http://localhost:4000/2017/04/04/markdown_first/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -155,13 +155,13 @@
 
     <!-- Image to hack wechat -->
 <!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
-<!-- <img src="/img/post-bg-2015.jpg" width="0" height="0"> -->
+<!-- <img src="/img/post-bg-universe.jpg" width="0" height="0"> -->
 
 <!-- Post Header -->
 <style type="text/css">
     header.intro-header{
         position: relative;
-        background-image: url('/img/post-bg-2015.jpg')
+        background-image: url('/img/post-bg-universe.jpg')
     }
 
     
@@ -174,25 +174,15 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/#Approximation" title="Approximation">Approximation</a>
-                        
-                        <a class="tag" href="/tags/#Determine methods" title="Determine methods">Determine methods</a>
-                        
-                        <a class="tag" href="/tags/#KL Divergence" title="KL Divergence">KL Divergence</a>
-                        
-                        <a class="tag" href="/tags/#Machine Learning" title="Machine Learning">Machine Learning</a>
-                        
-                        <a class="tag" href="/tags/#Mean field Method" title="Mean field Method">Mean field Method</a>
-                        
-                        <a class="tag" href="/tags/#Variational Inference" title="Variational Inference">Variational Inference</a>
+                        <a class="tag" href="/tags/#markdown" title="markdown">markdown</a>
                         
                     </div>
-                    <h1>Variational Bayes</h1>
+                    <h1>markdown test</h1>
                     
                     
-                    <h2 class="subheading"></h2>
+                    <h2 class="subheading">markdown</h2>
                     
-                    <span class="meta">Posted by huajh7 on March 7, 2013</span>
+                    <span class="meta">Posted by huajh7 on April 4, 2017</span>
                 </div>
             </div>
         </div>
@@ -208,60 +198,208 @@
             <div class="
                 col-lg-8 col-lg-offset-2
                 col-md-10 col-md-offset-1
-                post-container">
+                post-container" > <!-- style="width:70%" -->
 
-				<p><strong><em>关键词</em></strong>
- **贝叶斯推断，平均场理论，变分估计，贝叶斯推断，KL散度，确定性估计</p>
+				<h2 id="example-of-markdown">example of markdown</h2>
 
-<p>一、前言</p>
+<h3 id="homepage">homepage</h3>
+<p><a href="http://huajh7.com">huajh7.com</a></p>
 
-<p>上世纪90年代，变分推断在概率模型上得到迅速发展，在贝叶斯框架下一般的变分法由Attias的两篇文章给出。Matthew J.Beal的博士论文《Variational Algorithms for Approximate Bayesian Inference》中有比较充分地论述，作者将其应用于隐马尔科夫模型，混合因子分析，线性动力学，图模型等。变分贝叶斯是一类用于贝叶斯估计和机器学习领域中近似计算复杂（intractable）积分的技术。它主要应用于复杂的统计模型中，这种模型一般包括三类变量：观测变量(observed variables, data)，未知参数（parameters）和潜变量（latent variables）。在贝叶斯推断中，参数和潜变量统称为不可观测变量(unobserved variables)。变分贝叶斯方法主要是两个目的:</p>
+<h3 id="quotes">quotes</h3>
 
-<p>(1)   近似不可观测变量的后验概率，以便通过这些变量作出统计推断。</p>
+<blockquote>
+  <p>This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,
+consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.
+Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.</p>
 
-<p>(2)   对一个特定的模型，给出观测变量的边缘似然函数（或称为证据，evidence）的下界。主要用于模型的选择，认为模型的边缘似然值越高，则模型对数据拟合程度越好，该模型产生Data的概率也越高。</p>
+  <p>Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse
+id sem consectetuer libero luctus adipiscing.</p>
 
-<p>对于第一个目的，蒙特卡洛模拟，特别是用Gibbs取样的MCMC方法，可以近似计算复杂的后验分布，能很好地应用到贝叶斯统计推断。此方法通过大量的样本估计真实的后验，因而近似结果带有一定的随机性。与此不同的是，变分贝叶斯方法提供一种局部最优，但具有确定解的近似后验方法。</p>
+  <p>machine</p>
+  <blockquote>
+    <p>This is nested blockquote.</p>
+  </blockquote>
 
-<p>从某种角度看，变分贝叶斯可以看做是EM算法的扩展，因为它也是采用极大后验估计(MAP)，即用单个最有可能的参数值来代替完全贝叶斯估计。另外，变分贝叶斯也通过一组相互依然（mutually dependent）的等式进行不断的迭代来获得最优解。</p>
+  <p>Back to the first level.
+return shell_exec(“echo $input | $markdown_script”);</p>
+</blockquote>
 
-<p>二、问题描述</p>
+<h3 id="pargraphs">pargraphs</h3>
+<ul>
+  <li>Red</li>
+  <li>Bule
+    <ul>
+      <li>machine</li>
+    </ul>
+  </li>
+  <li>good
+    <ol>
+      <li>Bird</li>
+      <li>parish</li>
+    </ol>
+  </li>
+</ul>
 
-<p>重新考虑一个问题：1）有一组观测数据$D$，
-并且已知模型的形式，求参数与潜变量（或不可观测变量）<script type="math/tex">Z = \{ {Z_1},...,{Z_n}\}</script> 的后验分布:<script type="math/tex">P(Z|D)</script>。</p>
+<p><del>strik through</del></p>
 
-<p>\begin{equation} \label{beta_Gamma}
-P(\beta_k) = \mathcal{G}(c_0,d_0), \forall k.
-\end{equation}</p>
+<p><code class="highlighter-rouge">import tempfile; print(tempfile.gettempdir())</code></p>
 
-<p>对于问题一，幸运的是，我们不需要重新定义一个度量指标。在信息论中，已经存在描述两个随机分布之间距离的度量，即相对熵，或者称为Kullback-Leibler散度。</p>
+<p>==hightlight==</p>
 
-<p>三、Kullback-Leibler散度</p>
+<hr />
 
-<p><a href="http://blog.huajh7.com/2013/03/06/variational-bayes/vb-1/"><img src="http://blog.huajh7.com/wp-content/uploads/2013/03/vb-1-300x235.png" alt="vb-1" /></a></p>
+<h3 id="代码段和代码高亮">代码段和代码高亮</h3>
 
-<p>四、平均场理论（Mean Field Method）</p>
+<p>using <code class="highlighter-rouge">molokai.css</code>  by 
+<code class="highlighter-rouge">rougify style molokai &gt; css/syntax.css</code></p>
 
-<p>数学上说，平均场的适用范围只能是完全图，或者说系统结构是well-mixed，在这种情况下，系统中的任何一个个体以等可能接触其他个体。反观物理，平均场与其说是一种方法，不如说是一种思想。其实统计物理的研究目的就是期望对宏观的热力学现象给予合理的微观理论。物理学家坚信，即便不满足完全图的假设，但既然这种“局部”到“整体”的作用得以实现，那么个体之间的局部作用相较于“全局”的作用是可以忽略不计的。</p>
+<p>Add the code in <code class="highlighter-rouge">syntax.css</code> to change the font and font-size</p>
 
-<p>注意这里并非一个不可观测变量一个划分，而应该根据实际情况做决定。当然你也可以这么做，但是有时候，将几个潜变量放在一起会更容易处理。</p>
+<div class="language-css highlighter-rouge"><pre class="highlight"><code><span class="nc">.highlight</span> <span class="p">{</span>
+  <span class="nl">color</span><span class="p">:</span> <span class="m">#F5F5F5</span><span class="p">;</span>
+  <span class="nl">background-color</span><span class="p">:</span> <span class="m">#272822</span><span class="p">;</span>  <span class="c">/*#1b1d1e  f8f8f2  272822*/</span>
+  <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'Consolas'</span><span class="p">,</span> <span class="nb">serif</span><span class="p">;</span>
+  <span class="nl">font-size</span><span class="p">:</span> <span class="m">15px</span><span class="p">;</span>  
+<span class="p">}</span>
+</code></pre>
+</div>
 
-<p>参考文献</p>
+<p><code class="highlighter-rouge">ruby</code></p>
 
-<p>[1] Smídl, Václav, and Anthony Quinn. <em>The variational Bayes method in signal processing</em>. Springer, 2006.</p>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">show</span>
+  <span class="vi">@widget</span> <span class="o">=</span> <span class="no">Widget</span><span class="p">(</span><span class="n">params</span><span class="p">[</span><span class="ss">:id</span><span class="p">])</span>
+  <span class="n">respond_to</span> <span class="k">do</span> <span class="o">|</span><span class="nb">format</span><span class="o">|</span>
+    <span class="nb">format</span><span class="p">.</span><span class="nf">html</span> <span class="c1"># show.html.erb</span>
+    <span class="nb">format</span><span class="p">.</span><span class="nf">json</span> <span class="p">{</span> <span class="n">render</span> <span class="ss">json: </span><span class="vi">@widget</span> <span class="p">}</span>
+  <span class="k">end</span>
+<span class="k">end</span></code></pre></figure>
 
-<p>[2] Beal, Matthew James. <em>Variational algorithms for approximate Bayesian inference</em>. Diss. University of London, 2003.</p>
+<p><code class="hljs livecodeserver"></code></p>
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">show</span>
+  <span class="vi">@widget</span> <span class="o">=</span> <span class="no">Widget</span><span class="p">(</span><span class="n">params</span><span class="p">[</span><span class="ss">:id</span><span class="p">])</span>
+  <span class="n">respond_to</span> <span class="k">do</span> <span class="o">|</span><span class="nb">format</span><span class="o">|</span>
+    <span class="nb">format</span><span class="p">.</span><span class="nf">html</span> <span class="c1"># show.html.erb</span>
+    <span class="nb">format</span><span class="p">.</span><span class="nf">json</span> <span class="p">{</span> <span class="n">render</span> <span class="ss">json: </span><span class="vi">@widget</span> <span class="p">}</span>
+  <span class="k">end</span>
+<span class="k">end</span></code></pre></figure>
+<p>&lt;/code&gt;</p>
 
-<p>[3] Fox, Charles W., and Stephen J. Roberts. “A tutorial on variational Bayesian inference.” <em>Artificial Intelligence Review</em> 38.2 (2012): 85-95.</p>
+<p><code class="highlighter-rouge">ruby</code></p>
 
-<p>[4] Attias, Hagai. “Inferring parameters and structure of latent variable models by variational Bayes.” <em>Proceedings of the Fifteenth conference on Uncertainty in artificial intelligence</em>. Morgan Kaufmann Publishers Inc., 1999.</p>
+<div class="language-ruby highlighter-rouge"><pre class="highlight"><code><span class="k">def</span> <span class="nf">show</span>
+  <span class="vi">@widget</span> <span class="o">=</span> <span class="no">Widget</span><span class="p">(</span><span class="n">params</span><span class="p">[</span><span class="ss">:id</span><span class="p">])</span>
+  <span class="n">respond_to</span> <span class="k">do</span> <span class="o">|</span><span class="nb">format</span><span class="o">|</span>
+    <span class="nb">format</span><span class="p">.</span><span class="nf">html</span> <span class="c1"># show.html.erb</span>
+    <span class="nb">format</span><span class="p">.</span><span class="nf">json</span> <span class="p">{</span> <span class="n">render</span> <span class="ss">json: </span><span class="vi">@widget</span> <span class="p">}</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre>
+</div>
 
-<p>[5] Attias, Hagai. “A variational Bayesian framework for graphical models.”<em>Advances in neural information processing systems</em> 12.1-2 (2000): 209-215.</p>
+<p><code class="highlighter-rouge">matlab</code></p>
 
-<p>全文下载：<a href="http://blog.huajh7.com/wp-content/uploads/2013/03/Variational-Inference-full.pdf"><strong>Variational Inference -full.pdf</strong></a><a href="http://blog.huajh7.com/wp-content/uploads/2013/03/Variational-Inference1.pdf">
-</a></p>
+<div class="language-matlab highlighter-rouge"><pre class="highlight"><code><span class="n">A</span> <span class="o">=</span> <span class="nb">cat</span><span class="p">(</span> <span class="mi">3</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">3</span><span class="p">;</span> <span class="mi">9</span> <span class="mi">8</span> <span class="mi">7</span><span class="p">;</span> <span class="mi">4</span> <span class="mi">6</span> <span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span> <span class="mi">3</span> <span class="mi">2</span><span class="p">;</span> <span class="mi">8</span> <span class="mi">8</span> <span class="mi">4</span><span class="p">;</span> <span class="mi">5</span> <span class="mi">3</span> <span class="mi">5</span><span class="p">],</span> <span class="k">...</span>
+                 <span class="p">[</span><span class="mi">6</span> <span class="mi">4</span> <span class="mi">7</span><span class="p">;</span> <span class="mi">6</span> <span class="mi">8</span> <span class="mi">5</span><span class="p">;</span> <span class="mi">5</span> <span class="mi">4</span> <span class="mi">3</span><span class="p">]);</span>
+<span class="c1">% The EIG function is applied to each of the horizontal 'slices' of A.</span>
+<span class="k">for</span> <span class="nb">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">:</span><span class="mi">3</span>
+    <span class="nb">eig</span><span class="p">(</span><span class="nb">squeeze</span><span class="p">(</span><span class="n">A</span><span class="p">(</span><span class="nb">i</span><span class="p">,:,:)))</span>
+<span class="k">end</span>
+</code></pre>
+</div>
 
-<p> </p>
+<p><code class="highlighter-rouge">python</code></p>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="k">class</span> <span class="nc">ReqStrSugRepr</span><span class="p">(</span><span class="nb">type</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="n">cls</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">bases</span><span class="p">,</span> <span class="n">attrd</span><span class="p">):</span>
+        <span class="nb">super</span><span class="p">(</span><span class="n">ReqStrSugRepr</span><span class="p">,</span> <span class="n">cls</span><span class="p">)</span><span class="o">.</span><span class="n">__init__</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">bases</span><span class="p">,</span> <span class="n">attrd</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="s">'__str__'</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">attrd</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="nb">TypeError</span><span class="p">(</span><span class="s">"Class requires overriding of __str__()"</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="s">'__repr__'</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">attrd</span><span class="p">:</span>
+            <span class="n">warn</span><span class="p">(</span>
+                <span class="s">'Class suggets overrding of __repr__()</span><span class="se">\n</span><span class="s">'</span><span class="p">,</span>
+                <span class="n">stacklevel</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+</code></pre>
+</div>
+
+<p><code class="highlighter-rouge">c/c++</code></p>
+
+<div class="language-c highlighter-rouge"><pre class="highlight"><code><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">a</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+    <span class="n">print</span><span class="p">(</span><span class="s">"int a = %d</span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">a</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre>
+</div>
+
+<div class="language-java highlighter-rouge"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">JavaBeans.People.Administor</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">AcceptMember</span> <span class="kd">extends</span> <span class="n">HttpServlet</span> <span class="o">{</span>
+
+    <span class="cm">/**
+     * Constructor of the object.
+     */</span>
+    <span class="kd">public</span> <span class="nf">AcceptMember</span><span class="o">()</span> <span class="o">{</span>
+        <span class="kd">super</span><span class="o">();</span>
+    <span class="o">}</span>
+
+    <span class="cm">/**
+     * 
+     * @throws ServletException if an error occurred
+     * @throws IOException if an error occurred
+     */</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">doGet</span><span class="o">(</span><span class="n">HttpServletRequest</span> <span class="n">request</span><span class="o">,</span> <span class="n">HttpServletResponse</span> <span class="n">response</span><span class="o">)</span>
+            <span class="kd">throws</span> <span class="n">ServletException</span><span class="o">,</span> <span class="n">IOException</span> <span class="o">{</span>
+
+        <span class="n">response</span><span class="o">.</span><span class="na">setContentType</span><span class="o">(</span><span class="s">"text/html"</span><span class="o">);</span>
+        <span class="n">doPost</span><span class="o">(</span><span class="n">request</span><span class="o">,</span> <span class="n">response</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+
+</code></pre>
+</div>
+
+<p>质能方程公式：<script type="math/tex">E=mc^2</script></p>
+
+<script type="math/tex; mode=display">\min_{x,y} \sum_{i=1}^{N} (x_i+ 10 + y_i)^2</script>
+
+<h3 id="脚注footnote">脚注（footnote）</h3>
+
+<p>实现方式如下:</p>
+
+<p>比如PHP<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> Markdown Extra <sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup> 是这样的。</p>
+
+<h3 id="引用方式">引用方式：</h3>
+<p>I get 10 times more traffic from <a href="http://google.com/" title="Google">Google</a> than from <a href="http://search.yahoo.com/" title="Yahoo Search">Yahoo</a> or <a href="http://search.msn.com/" title="MSN Search">MSN</a>.</p>
+
+<h3 id="下划线">下划线</h3>
+
+<p>—下划线—</p>
+
+<h3 id="images">Images</h3>
+
+<h4 id="内联方式">内联方式：</h4>
+
+<p><img src="/img/lenanoise.jpg" alt="lenaNoise" title="lenaNoise" /></p>
+
+<h4 id="引用方式-1">引用方式：</h4>
+<p><img src="/img/mona-leber-final.jpg" alt="alt text" title="mona-leber" /></p>
+
+<p><img src="" alt="" /></p>
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1">
+      <p>Markdown是一种纯文本标记语言&nbsp;<a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    </li>
+    <li id="fn:2">
+      <p>开源笔记平台，支持Markdown和笔记直接发为博文&nbsp;<a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
 
 
                 <hr style="visibility: hidden;">
@@ -270,16 +408,19 @@ P(\beta_k) = \mathcal{G}(c_0,d_0), \forall k.
                 <!-- 多说 Share start -->
                 <div class="ds-share"
                     style="text-align: right"
-                    data-thread-key="/2013/03/07/variational-bayes"
-                    data-title="Variational Bayes"
-                    data-url="http://localhost:4000/2013/03/07/variational-bayes/"
-                    data-images="http://localhost:4000/img/post-bg-2015.jpg"
-                    data-content="关键词
- **贝叶斯推断，平均场理论，变分估计，贝叶斯推断，KL散度，确定性估计
+                    data-thread-key="/2017/04/04/markdown_first"
+                    data-title="markdown test"
+                    data-url="http://localhost:4000/2017/04/04/markdown_first/"
+                    data-images="http://localhost:4000/img/post-bg-universe.jpg"
+                    data-content="example of markdown
 
-一、前言
+homepage
+huajh7.com
 
-上世纪90年代，变分推断在概率模型上得到迅速发展，在贝叶斯... | Junhao Hua 博客 | huajh7's Blog " >
+quotes
+
+
+  This is a blockquote wit... | Junhao Hua 博客 | huajh7's Blog " >
                     <div class="ds-share-inline">
                       <style> 
                         .ds-share-icons-16 {display:none;} 
@@ -301,11 +442,18 @@ P(\beta_k) = \mathcal{G}(c_0,d_0), \forall k.
 
                 <ul class="pager">
                     
+                    <li class="previous">
+                        <a href="/2017/04/04/kramdown-syntax/" data-toggle="tooltip" data-placement="top" title="Kramdown Syntax">
+                        Previous<br>
+                        <span>Kramdown Syntax</span>
+                        </a>
+                    </li>
+                    
                     
                     <li class="next">
-                        <a href="/2013/04/02/phd-reflection/" data-toggle="tooltip" data-placement="top" title="精神痞子">
+                        <a href="/2017/04/04/markdown_maxiang/" data-toggle="tooltip" data-placement="top" title="Markdown简介BY马克飞象">
                         Next<br>
-                        <span>精神痞子</span>
+                        <span>Markdown简介BY马克飞象</span>
                         </a>
                     </li>
                     
@@ -316,9 +464,9 @@ P(\beta_k) = \mathcal{G}(c_0,d_0), \forall k.
                 <!-- 多说评论框 start -->
                 <div class="comment">
                     <div class="ds-thread"
-                        data-thread-key="/2013/03/07/variational-bayes"
-                        data-title="Variational Bayes"
-                        data-url="http://localhost:4000/2013/03/07/variational-bayes/" >
+                        data-thread-key="/2017/04/04/markdown_first"
+                        data-title="markdown test"
+                        data-url="http://localhost:4000/2017/04/04/markdown_first/" >
                     </div>
                 </div>
                 <!-- 多说评论框 end -->
@@ -329,6 +477,20 @@ P(\beta_k) = \mathcal{G}(c_0,d_0), \forall k.
             </div>  
 
     <!-- Side Catalog Container -->
+        
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
         
 
     <!-- Sidebar Container -->
@@ -394,6 +556,12 @@ P(\beta_k) = \mathcal{G}(c_0,d_0), \forall k.
         				
                             
         				
+                            
+        				
+                            
+                				<a href="/tags/#markdown" title="markdown" rel="3">
+                                    markdown
+                                </a>
                             
         				
         			</div>
@@ -677,6 +845,50 @@ P(\beta_k) = \mathcal{G}(c_0,d_0), \forall k.
 
 
 <!-- Side Catalog -->
+
+<script type="text/javascript">
+    function generateCatalog (selector) {
+        var P = $('div.post-container'),a,n,t,l,i,c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#"+$(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="'+i+'" rel="nofollow">'+t+'</a>');
+            l = $('<li class="'+n+'_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;    
+    }
+
+    generateCatalog(".catalog-body");
+
+    // toggle side catalog
+    $(".catalog-toggle").click((function(e){
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    /*
+     * Doc: https://github.com/davist11/jQuery-One-Page-Nav
+     * Fork by Hux to support padding
+     */
+    async("/js/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
 
 
 
