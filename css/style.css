@@ -11,7 +11,6 @@ html, body {
   margin-bottom: 40px;
 }
 .bg1 {
-  background-image: url('stanfordpano2.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: auto 100%;
@@ -349,8 +348,8 @@ hr.soft {
   font-weight: 300;
 }
 .ts {
-  font-size: 14px;
-  margin-bottom: 5px;
+  font-size: 18px;
+  margin-bottom: 10px;
   font-weight: 300;
 }
 .t2when {
@@ -359,6 +358,16 @@ hr.soft {
 .t2who {
   color: rgb(0,132,0);
 }
+
 .t2what {
 
+}
+
+.t2where {
+
+}
+
+.t2title{
+  font-weight: 400; /*bold*/
+  color: rgb(0,132,0);
 }
