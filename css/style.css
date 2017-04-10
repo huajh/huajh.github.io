@@ -15,9 +15,29 @@ html, body {
   background-position: center center;
   background-size: auto 100%;
 }
+
 .bg2 {
   background-color: #299DB6;
 }
+
+.bg3 {
+  background: no-repeat center center;
+  background-color: #808080;
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  margin-bottom: 0px;
+  /* 0 on mobile, modify by Hux */
+}
+@media only screen and (min-width: 768px) {
+  .bg3 {
+    margin-bottom: 20px;
+    /* response on desktop */
+  }
+}
+
 #headerblob {
   position: absolute;
   left: 20%;
@@ -352,6 +372,12 @@ hr.soft {
   margin-bottom: 10px;
   font-weight: 300;
 }
+
+.t2topic
+{
+  color: rgb(0,132,0);
+}
+
 .t2when {
   color: rgb(132,0,0);
 }
