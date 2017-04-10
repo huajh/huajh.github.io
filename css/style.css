@@ -41,7 +41,7 @@ html, body {
 #headerblob {
   position: absolute;
   left: 20%;
-  top: 165px;
+  top: 140px;
   width: 80%;
 }
 #headertext {
@@ -216,9 +216,9 @@ h2 {
   padding: 30px 0px 40px;
 }
 #sitefooter {
-  height: 40px;
-  margin-top: 200px;
-  background-color: #F1F3F4;
+  height: 60px;
+  margin-top: 60px;
+  background-color: #4F4F4F; /* #575757 #404040 #F1F3F4*/
 }
 hr.soft {
   border: 0;
@@ -332,7 +332,7 @@ hr.soft {
 }
 
 .miscitem {
-  margin: 10px 0px 60px;
+  margin: 10px 0px 30px;
 }
 .miscimg img {
   height: 50px;
