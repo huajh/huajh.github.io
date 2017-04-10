@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,8 +12,9 @@
   <link href="css/css" rel="stylesheet" type="text/css">
 
 
-<!-- Tracking code -->
-<script type="text/javascript" async="" src="./js/ga.js"></script><script type="text/javascript">
+<!-- Google Tracking code -->
+
+<!-- <script type="text/javascript" async="" src="./js/ga.js"></script><script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-3698471-13']);
   _gaq.push(['_trackPageview']);
@@ -21,8 +24,17 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
+</script> -->
+
+<!-- Baidu Tracking code -->
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F6717882c524501d893a115da45ab44ef' type='text/javascript'%3E%3C/script%3E"));
 </script>
+
+
 </head>
+
 
 <body onload="start()">
 
@@ -33,12 +45,24 @@
 		</ul>
 	</div>
 	<div id="headerblob">
-    	<img src="img/junhao3.jpg" class="img-circle imgme">
+    	<img src="img/junhao.jpg" class="img-circle imgme">
 	    <div id="headertext">
 	    	<div id="htname">Junhao Hua</div>
 	    	<div id="htdesc">ZheJiang University, Machine Learning, Ph.D. student</div>
-	    	<div id="htem">huajh _at_ zju.edu.cn</div>
-	    	<ul class="list-inline text-center">
+	    	<div id="htem">huajh -at- zju.edu.cn (replace -at- by @)</div>
+
+<!-- 			<div id="icons">
+				<div class="svgico">
+				<a href="https://twitter.com/karpathy"><img src="./img/03-twitter.svg"></a>
+				</div>
+				<div class="svgico">
+				<a href="https://karpathy.github.io/"><img src="./img/20-rss.svg"></a>
+				</div>
+				<div class="svgico">
+				<a href="https://github.com/karpathy"><img src="./img/octocat.svg" width="56px"></a>
+				</div>
+			</div>	 -->    	
+	    	<ul class="text-center"><!--  list-inline text-center -->
                 <li>
                     <a href="https://huajh7.github.io">
                         <span class="fa-stack fa-lg">
@@ -70,15 +94,7 @@
 		                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
 		                </span>
 		            </a>
-		        </li>
-                <li>
-                    <a target="_blank" href="https://scholar.google.com/citations?neG8uIIAAAAJ&hl">
-                        <span class="fa-stack fa-lg">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-google fa-stack-1x  fa-inverse"></i>
-                        </span>
-                    </a>
-                </li>	
+		        </li>	
                 <li>
                     <a target="_blank" href="https://www.zhihu.com/people/hua-jun-hao">
                         <span class="fa-stack fa-lg">
@@ -86,15 +102,25 @@
                             <i class="fa  fa-stack-1x fa-inverse">知</i>
                         </span>
                     </a>
-                </li>  
-                <li>
-<!--                     <a href="https://twitter.com/huajh">
+                </li> 
+
+<!--                 <li>
+                	<a target="_blank" href="https://scholar.google.com/citations?neG8uIIAAAAJ&hl">
                         <span class="fa-stack fa-lg">
                             <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            <i class="fa fa-google fa-stack-1x  fa-inverse"></i>
                         </span>
                     </a>
-                </li>    -->             
+                </li>  
+ -->
+	<!--             <li>
+	                <a href="https://twitter.com/huajh">
+	                    <span class="fa-stack fa-lg">
+	                        <i class="fa fa-circle fa-stack-2x"></i>
+	                        <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+	                    </span>
+	                </a>
+	            </li>   -->      
 <!--                 <li>
                     <a target="_blank" href="https://www.facebook.com/huajunhao">
                         <span class="fa-stack fa-lg">
@@ -108,6 +134,7 @@
   </div>
 </div>
 
+<br> 
 <div class="container">
   <div id="timeline">
     <div class="timelineitem">
@@ -119,7 +146,7 @@
     <div class="timelineitem">
       <div class="tdate">Summer 2012</div>
       <div class="ttitle"> State Stree, Hangzhou,  C/C++ Engineer Internship</div>
-      <div class="tdesc">Maintenance and Development of Princeton Financial Systems.</div>
+      <div class="tdesc">Maintenance and Development for Princeton Financial Systems.</div>
     </div>
     <div class="timelineitem">
       <div class="tdate">2009 - 2013
@@ -157,7 +184,7 @@
   <br>
   <span class="t2when">Summer 2013:</span>
   <span class="t2who">C/C++ Engineer Internship at State Stree(Hangzhou) </span>
-  <span class="t2what">Maintenance and Development of Princeton Financial Systems.</span>
+  <span class="t2what">Maintenance and Development for Princeton Financial Systems.</span>
 
   <br>
   <span class="t2when">2009-2013:</span>
@@ -174,7 +201,10 @@
 
 <hr class="soft">
 <div class="container">
-	<h2>Publications</h2>
+	<h2>Publications 
+	 <a style="font-size: 22px; font-weight: 400;" target="_blank" href="https://scholar.google.com/citations?neG8uIIAAAAJ&hl">[Google Scholar]</a> 
+	</h2>
+	<!-- Here is my <a target="_blank" href="https://scholar.google.com/citations?neG8uIIAAAAJ&hl">Google Scholar</a> page. -->
 	<div id="pubs">
 
 <!-- 	<div class="pubwrap">
@@ -236,16 +266,20 @@
 			<div class="pubt">Distributed Learning of Predictive Structures from Multiple Tasks Over Networks</div>
 			<div class="puba">Junhao Hua, Chunguang Li, Hui-Liang Shen</div>            
 			<div class="pubv">IEEE Transactions on Industrial Electronics(<b>TIE</b>), preprint, DOI: 10.1109/TIE.2016.2588463.</div>
-            <div class="pubd">We study both qualitatively and quantitatively
-              the performance improvements of Recurrent Networks in Language Modeling tasks compared to finite-horizon models. Our analysis sheds light on the source of improvements
-              , and identifies areas for further potential gains. Among some fun results we find LSTM cells that keep track of long-range dependencies such as line lengths, quotes and brackets.</div>           
+            <div class="pubd">
+            We concerned with the problem of distributed multitask learning over networks, which aims to simultaneously 
+            infer multiple node-specific parameter vectors in a collaborative manner. In this work, we implicitly model 
+            the similarity of parameter vectors by assuming that the parameter vectors share a common low-dimensional 
+            predictive structure on hypothesis spaces, which is learned using the available data in networks. 
+            A distributed structure learning algorithm for the in-network cooperative estimation problem is derived 
+            based on the block coordinate descent method integrating with the inexact ADMM technique. 
+            </div>           
             <div class="publ">
               <ul>
                 <li><a href="./papers/dmtl_preprint_hua2016tie.pdf">PDF</a></li>
                 <li><a href="#">Code</a></li>
 				<li><a href="#">Blog Post</a></li>
-                <li><a href="#">Supplemental</a></li>
-                <li><a href="#">Web Demo of Results</a></li>		
+                <li><a href="#">Supplemental</a></li>		
               </ul>
             </div>
           </div>
@@ -256,21 +290,29 @@
     <div class="pubwrap">
       <div class="row">
         <div class="col-md-5">
-			<div class="pubimg"><img src="./img/dvb-paper.jpg"></div>
+			<div class="pubimg"><img src="./img/dvb-paper2.jpg"></div>
         </div>
         <div class="col-md-7">
 			<div class="pub">
 			<div class="pubt"> Distributed Variational Bayesian Algorithms over Sensor Networks</div>
 			<div class="puba">Junhao Hua, Chunguang Li</div>
 			<div class="pubv">IEEE Transactions on Signal Processing (<b>TSP</b>), vol.64, no.3, pp.783-798, Feb. 2016. </div>			
-			<div class="pubd">We study both qualitatively and quantitatively the performance improvements of Recurrent Networks in Language Modeling tasks compared to finite-horizon models. Our analysis sheds light on the source of improvements, and identifies areas for further potential gains. Among some fun results we find LSTM cells that keep track of long-range dependencies such as line lengths, quotes and brackets.</div>
+			<div class="pubd">
+			We propose two novel distributed VB algorithms for general Bayesian inference problem, 
+			which can be applied to a very general class of conjugate-exponential models. 
+			In the first approach, the global natural parameters at each node are optimized using 
+			a stochastic natural gradient that utilizes the Riemannian geometry of the approximation space, 
+			followed by an information diffusion step for cooperation with the neighbors. 
+			In the second method, a constrained optimization formulation for distributed estimation is established
+			in natural parameter space and solved by ADMM. An application of the distributed inference/estimation 
+			of a Bayesian Gaussian mixture model is then presented, to evaluate the effectiveness of the proposed algorithms.
+			</div>
 			<div class="publ">
 			  <ul>
 			    <li><a href="./papers/dvb_hua2016tsp.pdf">PDF</a></li>
 			    <li><a href="#">Code</a></li>
 				<li><a href="#">Blog Post</a></li>
-			    <li><a href="#">Supplemental</a></li>
-			    <li><a href="#">Web Demo of Results</a></li>		
+			    <li><a href="#">Supplemental</a></li>	
 			  </ul>
 			</div>
 			</div>
@@ -433,9 +475,9 @@
             </div>  
             <div class="publ">
               <ul>
-                <li><a href="https://github.com/huajh/action_recognition">Github</a></li>
+                <li><a target="_blank" href="https://github.com/huajh/action_recognition">Github</a></li>
                 <li><a href="./talks/action_recognition_slides2014.pdf">Slides</a></li>
-                <li><a href="./talks/action_recognition_report2014.pdf">Report(cn)</a></li> 
+                <li><a href="./reports/action_recognition_report2014.pdf">Report(cn)</a></li> 
 				<!-- <li><a href="#">Project Page</a></li> -->
                 <li><a href="#">Web Demo of Results</a></li>		
               </ul>
@@ -474,9 +516,9 @@
             </div>  
             <div class="publ">
               <ul>
-                <li><a href="https://github.com/huajh/action_recognition">Github</a></li>
+                <li><a target="_blank" href="https://github.com/huajh/action_recognition">Github</a></li>
                 <li><a href="./talks/action_recognition_slides2014.pdf">Slides</a></li>
-                <li><a href="./talks/action_recognition_report2014.pdf">Report(cn)</a></li> 
+                <li><a href="./reports/action_recognition_report2014.pdf">Report(cn)</a></li> 
 				<!-- <li><a href="#">Project Page</a></li> -->
                 <li><a href="#">Web Demo of Results</a></li>		
               </ul>
@@ -547,16 +589,14 @@
 					</span>
 				</a>
 			</li>
-			Read more through my <a href="http://huajh7.github.io/">Academic Blog</a>. 
+			Read more on my <a href="http://huajh7.github.io/">Academic Blog</a>. 
 		    </div>
 		  </div>
 
 		  <div class="miscitem">
 		    <div class="miscd">
 		    <b>Address:</b> 
-				Research center of Statistical Information and Image Processing, 
-				College of Information Science & Electronic Engineering, Zhejiang University, 
-				No.38 Zheda Road, Xihu District, Hangzhou, Zhejiang, China.
+				 Zhejiang University Yuquan Campus, No.38 Zheda Road, Xihu District, Hangzhou, Zhejiang, China.
 		    </div>
 		  </div>
 
@@ -566,13 +606,6 @@
 				Administration Building #428
 		    </div>
 		  </div>
-
-
-
-
-
-
-
 
 		</div>
 
@@ -604,14 +637,14 @@
 		                </span>
 		            </a>
 		        </li>
-                <li>
+<!--                 <li>
                     <a target="_blank" href="https://scholar.google.com/citations?neG8uIIAAAAJ&hl">
                         <span class="fa-stack fa-lg">
                             <i class="fa fa-circle fa-stack-2x"></i>
                             <i class="fa fa-google fa-stack-1x  fa-inverse"></i>
                         </span>
                     </a>
-                </li>	
+                </li> -->	
                 <li>
                     <a target="_blank" href="https://www.zhihu.com/people/hua-jun-hao">
                         <span class="fa-stack fa-lg">
@@ -626,19 +659,28 @@
 		  <div class="miscitem">
 		    <div class="miscd">
 		    <b>Emails:</b> 
-				huajh -at- zju.edu.cn (replace -at- by @)
-			huajh7 -at- gmail.com (replace -at- by @)
+				huajh -at- zju.edu.cn (replace -at- by @), 				
+				huajh7 -at- gmail.com (replace -at- by @)
 		    </div>
 		  </div>
+
+		  <div class="miscitem">
+		    <div class="miscd">
+		    <b>Last update:</b> 
+		    <li style="  font-size: 18px; color: #4B0082; ">10 Apr 2017 </li> <!-- font-weight: 400; -->
+		    </div>
+		  </div>
+
 		  
+
 		</div>
    </div>
 </div>
 
 
-<div id="sitefooter">
+<!-- <div id="sitefooter">
 
-</div>
+</div> -->
 
 <!-- place js at end for faster loading -->
 <script src="./js/jquery-1.11.1.min.js"></script>
