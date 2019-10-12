@@ -1,6 +1,6 @@
 # huajh.github.io
 
-This is my [academic website](http://huajh.github.io.
+This is my [academic website](http://huajh.github.io).
 
 
 ### License
